@@ -1,6 +1,6 @@
-def multiplication_table(n):
+data = [15, 7, 30, 45, 8, 60, 3, 20]
 
-    for i in range(1, 11):
-        print(f"{n} x {i} = {n * i}")
+for index, value in enumerate(data):
 
-multiplication_table(5)
+    if value % 5 == 0 and value % 3 == 0:
+        print("Index:", index, "Value:", value)
