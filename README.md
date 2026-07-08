@@ -1,2 +1,0 @@
-# React-Practices
-Learning React
