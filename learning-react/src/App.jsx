@@ -8,8 +8,10 @@ const App = () => {
     1000
   )
 
+  console.log('rendering...', counter)
+
   return (
-    <div>{counter}</div>
+    <div><h1>{counter}</h1></div>
   )
 }
 
