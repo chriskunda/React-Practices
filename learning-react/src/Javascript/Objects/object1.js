@@ -1,4 +1,4 @@
-export const object1 = {
+const object1 = {
   name: 'Arto Hellas',
   age: 35,
   education: 'PhD',
