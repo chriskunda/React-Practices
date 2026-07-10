@@ -1,8 +1,10 @@
 import { useState } from 'react'
 
-const Display = (props) => {
+const Button = (props) => {
   return (
-    <div>{props.counter}</div>
+    <button onClick={props.onClick}>
+      {props.text}
+    </button>
   )
 }
 
