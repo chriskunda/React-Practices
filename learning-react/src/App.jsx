@@ -11,6 +11,7 @@ const App = () => {
       left: clicks.left + 1 
     }
     setClicks(newClicks)
+    console.log(clicks)
   }
 
   const handleRightClick = () => {
@@ -19,6 +20,7 @@ const App = () => {
       right: clicks.right + 1 
     }
     setClicks(newClicks)
+    console.log(clicks)
   }
 
   return (
