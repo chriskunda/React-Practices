@@ -9,13 +9,16 @@ const Display = (props) => {
 const App = () => {
   const [ counter, setCounter ] = useState(0)
 
+  const increaseByOne = () => setCounter(counter + 1)
+  const setToZero = () => setCounter(0)
+
   return (
     <div>
-      <div>{counter}</div>
-      <button onClick={() => setCounter(counter + 1)}>
+      <Display counter={counter}/>
+      <button onClick={increaseByOne}>
         plus
       </button>
-      <button onClick={() => setCounter(0)}> 
+      <button onClick={setToZero}> 
         zero
       </button>
     </div>
