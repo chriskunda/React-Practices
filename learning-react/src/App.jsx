@@ -43,6 +43,8 @@ const App = () => {
 
   console.log(allClicks)
   console.log(total)
+
+
   return (
     <div>
       {left}
