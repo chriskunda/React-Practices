@@ -15,13 +15,15 @@ const App = () => {
     setRight(right + 1)
   }
 
+console.log(allClicks)
+
   return (
     <div>
       {left}
       <button onClick={handleLeftClick}>left</button>
       <button onClick={handleRightClick}>right</button>
       {right}
-      <p>{allClicks.join('  ')}</p>
+      <p>{allClicks.join(' ')}</p>
     </div>
   )
 }
