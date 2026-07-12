@@ -48,11 +48,10 @@ const App = () => {
 
   return (
     <div>
-      {left}
-      <Button onClick={handleLeftClick} text='left' />
-      <Button onClick={handleRightClick} text='right' />
-      {right}
-      <History allClicks={allClicks} />
+      {value}
+      <Button onClick={() => setToValue(1000)} text="thousand" />
+      <Button onClick={() => setToValue(0)} text="reset" />
+      <Button onClick={() => setToValue(value + 1)} text="increment" />
     </div>
   )
 }
