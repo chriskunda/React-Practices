@@ -21,6 +21,7 @@ const History = (props) => {
 
 const Button = ({ onClick, text }) => <button onClick={onClick}>{text}</button>
 
+
 const App = () => {
   const [left, setLeft] = useState(0)
   const [right, setRight] = useState(0)
