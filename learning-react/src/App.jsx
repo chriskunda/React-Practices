@@ -1,3 +1,5 @@
+import Note from './components/Note'
+
 const Note = ({ note }) => {
   return (
     <li>{note.content}</li>
