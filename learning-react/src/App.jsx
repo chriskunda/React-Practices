@@ -3,6 +3,9 @@ import Note from './components/Notes'
 
 const App = (props) => {
   const [notes, setNotes] = useState(props.notes)
+  const [newNote, setNewNote] = useState(
+    'a new note...'
+  )
 
   const addNote = (event) => {
     event.preventDefault()
