@@ -9,6 +9,11 @@ const App = (props) => {
 
   const addNote = (event) => {
     event.preventDefault()
+    const noteObject = {
+    content: newNote,
+    important: Math.random() < 0.5,
+    id: String(notes.length + 1),
+  }
     console.log('button clicked', event.target)
   }
 
