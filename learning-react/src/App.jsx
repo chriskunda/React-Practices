@@ -2,8 +2,13 @@ import {useState} from 'react'
 import Note from './components/Notes'
 
 const App = ({ notes }) => {
-  const [notes, setNotes] = useState([])
+  const [notes, setNotes] = useState(props.notes)
 
+  const addNote = (event) => {
+    event.preventDefault()
+    console.log('button clicked', event.target)
+  }
+  
   return (
     <div>
       <h1>Notes</h1>
