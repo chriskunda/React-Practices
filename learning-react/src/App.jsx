@@ -2,7 +2,8 @@ import {useState} from 'react'
 import Note from './components/Notes'
 
 const App = ({ notes }) => {
-  const [notes, setNotes] = useState(props.notes)
+  const [notes, setNotes] = useState([])
+
   return (
     <div>
       <h1>Notes</h1>
