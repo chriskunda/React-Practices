@@ -14,6 +14,8 @@ const App = (props) => {
     important: Math.random() < 0.5,
     id: String(notes.length + 1),
   }
+  setNotes(notes.concat(noteObject))
+  setNewNote('')
     console.log('button clicked', event.target)
   }
 
