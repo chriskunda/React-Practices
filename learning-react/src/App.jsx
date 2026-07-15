@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import Note from './components/Notes'
 
 const App = ({ notes }) => {
