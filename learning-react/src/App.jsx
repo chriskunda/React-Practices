@@ -23,6 +23,10 @@ const App = (props) => {
     console.log(event.target.value)
     setNewNote(event.target.value)
   }
+
+  const notesToShow = showAll
+  ? notes
+  : notes.filter(note => note.important === true)
   
   return (
     <div>
