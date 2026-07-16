@@ -32,7 +32,7 @@ const App = (props) => {
     <div>
       <h1>Notes</h1>
       <ul>
-        {notes.map((note) => (
+        {notesToShow.map(note => (
           <Note key={note.id} note={note} />
         ))}
       </ul>
