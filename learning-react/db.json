@@ -16,9 +16,19 @@
       "important": true
     },
     {
-      "content": "MMMMMMMMMMMM",
-      "important": true,
-      "id": "Xms22V6uws8"
+      "id": "msgY1tExph8",
+      "content": "New note is added",
+      "important": false
+    },
+    {
+      "id": "Xs3OCBVCANU",
+      "content": "New note is added",
+      "important": false
+    },
+    {
+      "id": "BsZoiYVcZ2I",
+      "content": "New note is added",
+      "important": true
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

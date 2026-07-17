@@ -19,9 +19,9 @@ const App = () => {
   const addNote = (event) => {
     event.preventDefault()
     const noteObject = {
+      id: String(notes.length + 1),
       content: newNote,
       important: Math.random() > 0.5,
-      id: String(notes.length + 1),
     }
 
     axios
