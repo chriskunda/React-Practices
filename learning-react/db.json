@@ -1,5 +1,5 @@
 {
-     "notes": [
+  "notes": [
     {
       "id": "1",
       "content": "HTML is easy",
@@ -14,6 +14,12 @@
       "id": "3",
       "content": "GET and POST are the most important methods of HTTP protocol",
       "important": true
+    },
+    {
+      "content": "MMMMMMMMMMMM",
+      "important": true,
+      "id": "Xms22V6uws8"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
