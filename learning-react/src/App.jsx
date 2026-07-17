@@ -33,15 +33,17 @@ const App = () => {
     })
   }
 
-  const toggleImportanceOf = (id) => {
-    console.log(`importance of ${id} needs to be toggled`)
-  }
-
   const handleNoteChange = (event) => {
     setNewNote(event.target.value)
   }
 
   const notesToShow = showAll ? notes : notes.filter((note) => note.important)
+
+  
+  const toggleImportanceOf = (id) => {
+    console.log(`importance of ${id} needs to be toggled`)
+  }
+
 
   return (
     <div>
