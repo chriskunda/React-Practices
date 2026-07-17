@@ -24,8 +24,7 @@ const App = () => {
       id: String(notes.length + 1),
     }
 
-    setNotes(notes.concat(noteObject))
-    setNewNote('')
+    
   }
 
   const handleNoteChange = (event) => {
