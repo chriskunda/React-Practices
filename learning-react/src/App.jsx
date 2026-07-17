@@ -1,11 +1,9 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Note from './components/Notes'
 
-const App = (props) => {
-  const [notes, setNotes] = useState(props.notes)
-  const [newNote, setNewNote] = useState(
-    'a new note...'
-  )
+const App = () => {
+  const [notes, setNotes] = useState([])
+  const [newNote, setNewNote] = useState('')
   const [showAll, setShowAll] = useState(true)
 
   const addNote = (event) => {
@@ -24,10 +22,6 @@ const App = (props) => {
     console.log(event.target.value)
     setNewNote(event.target.value)
   }
-
-  const notesToShow = showAll
-    ? notes
-    : notes.filter(note => note.important === true)
 
     useEffect(() => {
     console.log('effect')
