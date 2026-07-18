@@ -47,8 +47,8 @@ const App = () => {
 
     noteService
       .update(id, changedNote)
-      .then(response => {
-        setNotes(notes.map(note => note.id === id ? response.data : note))
+      .then(returnedNote => {
+        setNotes(notes.map(note => note.id === id ? returnedNote : note))
       })
 }
 
