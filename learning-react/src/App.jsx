@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Footer from './components/Footer'
 import Note from './components/Notes'
 import noteService from './services/notes'
 import Notification from './components/Notification'
