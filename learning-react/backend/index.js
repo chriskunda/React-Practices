@@ -88,3 +88,5 @@ const requestLogger = (request, response, next) => {
   console.log('---')
   next()
 }
+
+app.use(requestLogger)
