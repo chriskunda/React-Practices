@@ -88,7 +88,7 @@ const unknownEndpoint = (request, response) => {
 
 app.use(unknownEndpoint)
 
-//The cors to connect frontend
+//enabling cors from frontend
 const cors = require('cors')
 
 app.use(cors())
