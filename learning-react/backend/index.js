@@ -1,9 +1,5 @@
 const express = require('express')
-const cors = require('cors')
 const app = express()
-
-app.use(cors())
-app.use(express.json())
 
 let notes = [
   {
@@ -33,13 +29,10 @@ const requestLogger = (request, response, next) => {
 
 app.use(requestLogger)
 app.use(express.static('dist'))
+app.use(express.json())
 
 app.get('/', (request, response) => {
   response.send('<h1>Hello World!</h1>')
-})
-
-app.get('/api', (request, response) => {
-  response.json({ message: 'API is running', routes: ['/api/notes', '/api/notes/:id'] })
 })
 
 app.get('/api/notes', (request, response) => {
@@ -81,26 +74,6 @@ app.post('/api/notes', (request, response) => {
   notes = notes.concat(note)
 
   response.json(note)
-})
-
-app.put('/api/notes/:id', (request, response) => {
-  const id = request.params.id
-  const body = request.body
-  const note = notes.find((note) => note.id === id)
-
-  if (!note) {
-    return response.status(404).json({ error: 'note not found' })
-  }
-
-  const updatedNote = {
-    ...note,
-    content: body.content ?? note.content,
-    important: body.important ?? note.important,
-  }
-
-  notes = notes.map((note) => (note.id === id ? updatedNote : note))
-
-  response.json(updatedNote)
 })
 
 app.delete('/api/notes/:id', (request, response) => {
