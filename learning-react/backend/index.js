@@ -88,6 +88,10 @@ const unknownEndpoint = (request, response) => {
 
 app.use(unknownEndpoint)
 
+const cors = require('cors')
+
+app.use(cors())
+
 const PORT = 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
