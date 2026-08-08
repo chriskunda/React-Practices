@@ -26,7 +26,7 @@ export default { getAll, create, update }
 const mongoose = require('mongoose')
 
 // DO NOT SAVE YOUR PASSWORD TO GITHUB!!
-const password = process.argv[2]
+const password = v5ZzSHz3Z5aoJSdf
 const url = `mongodb+srv://fullstack:${password}@cluster0.a5qfl.mongodb.net/noteApp?retryWrites=true&w=majority&appName=Cluster0`
 
 mongoose.set('strictQuery',false)
