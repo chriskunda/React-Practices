@@ -5,7 +5,7 @@ if (process.argv.length < 3) {
   process.exit(1)
 }
 
-const password = process.argv[2]
+const password = v5ZzSHz3Z5aoJSdf
 
 const url = `mongodb+srv://christianira2003_db_user:${password}@cluster0.1xcgcuj.mongodb.net/?appName=Cluster0`
 
